@@ -1,6 +1,6 @@
 <p align="center" style="background-color: white">
   <a href="https://bragging-detector.vercel.app/">
-    <img src="https://bragging-detector.vercel.app/static/logo.png" height="200px" alt="カタカナ判定" />
+    <img src="./static/logo.png" height="200px" alt="カタカナ判定" />
   </a>
 </p>
 
@@ -10,7 +10,7 @@
 カタカナが検知されたときに効果音を鳴らすことができるアプリケーションです。
 
 ## Folder Structure
-.
+
 ├── README.md
 ├── components
 │   ├── head.js
