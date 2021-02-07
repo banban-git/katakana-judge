@@ -51,19 +51,6 @@ const Home = () => {
         const transcript = result[0].transcript;
         setTranscript(transcript);
         if (result.isFinal) {
-          //if (tagValues.some(value => transcript.includes(value))) {
-          var isKatakana = false;
-          for (var i=0; i < transcript.length; i++){
-            if (katakanaAll.indexOf(transcript.charAt(i),0) >= 0) {
-               isKatakana = true;
-               break;
-            }
-          }
-          // カタカナが存在していた場合
-          if (isKatakana) {
-            (userMusic || music).play();
-            setAlertOpen(true);
-          }
           // 音声認識が完了して文章が確定
           setFinalText(prevState => {
             // Android chromeなら値をそのまま返す
@@ -78,20 +65,11 @@ const Home = () => {
 
   return (
     <div>
-      <Head title="カタカナ判定" />
-      <Notice
-        open={alertOpen}
-        severity="error"
-        onClose={() => {
-          setAlertOpen(false);
-        }}
-      >
-        カタカナを検知しました
-      </Notice>
+      <Head title="議事録" />
       <Container>
         <Grid container alignItems="center" justify="center">
           <Grid item>
-            <img src="/static/logo.png" height="200px" alt="カタカナ禁止" />
+            <img src="/static/logo.png" height="200px" alt="議事録" />
           </Grid>
         </Grid>
         <Box fontSize={25}>
