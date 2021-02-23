@@ -19,7 +19,7 @@ const Home = () => {
   // 効果音
   const [userMusic, setUserMusic] = useState(null); // ユーザー追加音
   // 正規表現
-  const [katakanaAll, setRegexp] = useState("アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンァィゥェォャュョッ"); 
+  const [katakanaAll, setRegexp] = useState("アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンァィゥェォャュョッガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ"); 
 
   useEffect(() => {
     const music = new Audio("/static/warning01.mp3"); // デフォルト音
